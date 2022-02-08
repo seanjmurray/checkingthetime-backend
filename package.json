@@ -1,0 +1,22 @@
+{
+  "name": "checkingthetime-backend",
+  "version": "0.0.1",
+  "description": "The backend side of an app I am building to show off watches",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanjmurray/checkingthetime-backend.git"
+  },
+  "author": "Sean Murray",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/seanjmurray/checkingthetime-backend/issues"
+  },
+  "homepage": "https://github.com/seanjmurray/checkingthetime-backend#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
