@@ -10,7 +10,10 @@ var { buildSchema } = require('graphql');
 
 const Watch = require('./models/watchSchema')
 
+const originHeaderURL = process.env.ORIGIN_URL
+
 app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", originHeaderURL);
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
