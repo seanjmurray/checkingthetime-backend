@@ -2,7 +2,7 @@
   "name": "checkingthetime-backend",
   "version": "0.0.1",
   "description": "The backend side of an app I am building to show off watches",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/seanjmurray/checkingthetime-backend#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-form-data": "^2.0.17",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "mongoose": "^6.2.6"
   }
 }
