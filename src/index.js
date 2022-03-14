@@ -11,6 +11,7 @@ var { buildSchema } = require('graphql');
 const Watch = require('./models/watchSchema')
 
 const originHeaderURL = process.env.ORIGIN_URL
+const PORT = process.env.PORT
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", originHeaderURL);
@@ -45,7 +46,7 @@ app.route('/api/watches')
 
 mongoose.connect(process.env.DB_URL)
   .then(() => {
-    app.listen(8080, () => {
+    app.listen(PORT, () => {
       console.log('I am alive on 8080')
     })
   })
